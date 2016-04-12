@@ -25,6 +25,7 @@ public class DemoApplication {
 	
 	@RequestMapping("/")
 	public String index(Model model){
+		System.out.println("Hello /");
 		Person single = new Person("aa",11);
 		
 		List<Person> people = new ArrayList<Person>();
@@ -46,7 +47,7 @@ public class DemoApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(DemoApplication.class, args);
 	}
-	
+	/*
 	@Bean
 	public EmbeddedServletContainerFactory servletContainer(){
 		TomcatEmbeddedServletContainerFactory tomcat = new TomcatEmbeddedServletContainerFactory(){
@@ -75,5 +76,5 @@ public class DemoApplication {
 		
 		return connector;
 	}
-	
+	*/
 }
