@@ -14,13 +14,16 @@ import org.springframework.boot.context.embedded.EmbeddedServletContainerFactory
 import org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer;
 import org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainerFactory;
 import org.springframework.context.annotation.Bean;
+import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 import com.example.data.Person;
+import com.example.support.CustomRepositoryFactoryBean;
 @Controller
 @SpringBootApplication
+@EnableJpaRepositories(repositoryFactoryBeanClass=CustomRepositoryFactoryBean.class)
 public class DemoApplication {
 	
 	@RequestMapping("/")
