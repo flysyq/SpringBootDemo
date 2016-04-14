@@ -12,11 +12,15 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.example.data.Person;
 import com.example.data.PersonRepository;
+import com.example.support.PersonService;
 
 @RestController
 public class PersonController {
 	@Autowired
 	PersonRepository personRepository;
+	
+	@Autowired
+	PersonService personService;
 	
 	@RequestMapping("/save")
 	public Person save(String name,String address,Integer age){
@@ -59,5 +63,12 @@ public class PersonController {
 	public Page<Person> page(){
 		Page<Person> pagePeople = personRepository.findAll(new PageRequest(1,2));
 		return pagePeople;
+	}
+	
+	@RequestMapping("/search")
+	public List<Person> search(String name,String address,Integer page,Integer page_num){
+		
+		return personService.getList(page, page_num, address,name);
+		
 	}
 }
