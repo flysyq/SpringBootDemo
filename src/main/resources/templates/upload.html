@@ -1,0 +1,38 @@
+<html xmlns="http://www.thymeleaf.org">
+<head>
+<meta content="text/html;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<link th:href="@{bootstrap/dist/css/bootstrap.min.css}" rel="stylesheet"/>
+<link th:href="@{bootstrap/dist/css/bootstrap-theme.min.css}" rel="stylesheet"/>
+<title>Insert title here</title>
+</head>
+<body>
+<form method="post" action="upload"  enctype="multipart/form-data">
+<div class="row">
+	<div class="col-md-2">
+		上传文件:
+	</div>
+	<div class="col-md-6">
+		<input type="file" name="file"/>
+	</div>
+</div>
+<div class="row">
+	<div class="col-md-2">
+		名称:
+	</div>
+	<div class="col-md-6">
+		<input type="text" name="name"/>
+	</div>
+</div>
+<div class="row">
+	<div class="col-md-4">
+		<button class="btn btn-primary">上传</button>
+	</div>
+</div>
+</form>
+<script th:src="@{jquery/dist/jquery.min.js}"></script>
+<script th:src="@{bootstrap/dist/js/bootstrap.min.js}"></script>
+
+</body>
+</html>
