@@ -9,7 +9,8 @@ import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.RowMapper;
 import org.springframework.stereotype.Service;
 
-import com.example.data.Person;
+import com.example.dao.PersonService;
+import com.example.domain.Person;
 
 @Service
 public class PersonServiceImpl implements PersonService {

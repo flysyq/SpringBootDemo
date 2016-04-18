@@ -7,11 +7,11 @@
  * 1、修改人 2016年4月14日 下午1:36:32
  *   修改描述
  */
-package com.example.support;
+package com.example.dao;
 
 import java.util.List;
 
-import com.example.data.Person;
+import com.example.domain.Person;
 
 public interface PersonService {
 	

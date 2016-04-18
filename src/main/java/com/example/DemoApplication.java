@@ -19,7 +19,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 
-import com.example.data.Person;
+import com.example.domain.Person;
 import com.example.support.CustomRepositoryFactoryBean;
 @Controller
 @SpringBootApplication

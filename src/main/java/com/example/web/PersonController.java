@@ -10,9 +10,9 @@ import org.springframework.data.domain.Sort.Direction;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.example.data.Person;
-import com.example.data.PersonRepository;
-import com.example.support.PersonService;
+import com.example.dao.PersonRepository;
+import com.example.dao.PersonService;
+import com.example.domain.Person;
 
 @RestController
 public class PersonController {

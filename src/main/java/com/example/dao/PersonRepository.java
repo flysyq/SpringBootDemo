@@ -1,4 +1,4 @@
-package com.example.data;
+package com.example.dao;
 
 import java.util.List;
 
@@ -6,6 +6,7 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;
 
+import com.example.domain.Person;
 import com.example.support.CustomRepository;
 
 public interface PersonRepository extends CustomRepository<Person, Long> {

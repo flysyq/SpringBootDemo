@@ -9,7 +9,8 @@ import org.springframework.data.domain.PageRequest;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.example.data.*;
+import com.example.dao.PersonRepository;
+import com.example.domain.*;
 /**
  * @作者 admin
  * @时间 2016年4月13日 上午9:44:55

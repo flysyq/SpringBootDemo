@@ -22,7 +22,7 @@ import org.springframework.web.multipart.MultipartFile;
 @Controller
 public class Person1Controller {
 	@RequestMapping(value="/upload",method=RequestMethod.GET)
-	public String upload(){
+	public String upload(){  
 		return "upload";		
 	}
 	@RequestMapping(value="/upload",method=RequestMethod.POST)
